@@ -1216,7 +1216,7 @@ declare namespace Vex {
             setStave(stave : Stave) : Note;
             getModifierStartXY() : {x : number, y : number};
 
-            constructor(tab_struct : {positions : {str : number, fret : number | string}[], type? : string, dots? : number, duration : string, stem_direction? : number}, draw_stem? : boolean);
+            constructor(tab_struct : {positions : {str : number, fret : number | string}[], type? : string, dots? : number, duration : string, stem_direction? : number}, draw_stem? : boolean, extendWidth?: number);
             getCategory() : string;
             setGhost(ghost : boolean) : TabNote;
             hasStem() : boolean;
