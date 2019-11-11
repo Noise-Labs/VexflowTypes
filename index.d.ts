@@ -1209,6 +1209,12 @@ declare namespace Vex {
             fillText(text : string, x : number, y : number) : SVGContext;
             save() : SVGContext;
             restore() : SVGContext;
+			
+			openGroup(className?: string, id?: string, attrs?: any): void;
+			closeGroup(): void;
+			createLayer(layerName: string): SVGElement;
+			// will crate one with given name if not exist
+			useLayer(layerName: string): SVGElement;
         }
 
         class TabNote extends StemmableNote {
