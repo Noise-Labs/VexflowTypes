@@ -1215,6 +1215,7 @@ declare namespace Vex {
 			createLayer(layerName: string): SVGContext;
 			// will crate one with given name if not exist
 			useLayer(layerName: string): SVGContext;
+			ellipse(cx: number, cy: number, rx: number, ry: number, attributes?: {}): SVGContext;
         }
 
         class TabNote extends StemmableNote {
