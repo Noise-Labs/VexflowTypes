@@ -1206,7 +1206,7 @@ declare namespace Vex {
             stroke() : SVGContext;
             measureText(text : string) : SVGRect;
             ieMeasureTextFix(bbox : SVGRect, text : string) : {x : number, y : number, width : number, height : number};
-            fillText(text : string, x : number, y : number) : SVGContext;
+            fillText(text : string, x : number, y : number, customAttributes?: {}) : SVGContext;
             save() : SVGContext;
             restore() : SVGContext;
 			
