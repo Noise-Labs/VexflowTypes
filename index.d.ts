@@ -954,6 +954,7 @@ declare namespace Vex {
             getModifierStartXY() : {x : number, y : number};
             getDots() : number;
             x_shift: number;
+			drawnNoteHead: SVGElement[];
             
             constructor(note_struct : {type? : string, dots? : number, duration : string, clef? : string, keys : string[], octave_shift? : number, auto_stem? : boolean, stem_direction? : number});
             static DEBUG : boolean;
