@@ -1193,7 +1193,7 @@ declare namespace Vex {
             setViewBox(xMin : number, yMin : number, width : number, height : number) : void;
             clear() : void;
             rect(x : number, y : number, width : number, height : number) : SVGContext;
-            fillRect(x : number, y : number, width : number, height : number) : SVGContext;
+            fillRect(x : number, y : number, width : number, height : number, attributes? : any) : SVGContext;
             clearRect(x : number, y : number, width : number, height : number) : SVGContext;
             beginPath() : SVGContext;
             moveTo(x : number, y : number) : SVGContext;
