@@ -1211,7 +1211,7 @@ declare namespace Vex {
             save() : SVGContext;
             restore() : SVGContext;
 			
-			openGroup(className?: string, id?: string, attrs?: any): void;
+			openGroup(className?: string, id?: string, attrs?: any): SVGGElement;
 			closeGroup(): void;
 			createLayer(layerName: string): SVGContext;
 			// will crate one with given name if not exist
