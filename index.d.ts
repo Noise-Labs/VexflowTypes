@@ -632,7 +632,7 @@ declare namespace Vex {
             setDuration(duration : Fraction) : void;
             preFormatted : boolean;
 
-            constructor(note_struct : {type? : string, dots? : number, duration : string});
+            constructor(note_struct : {type? : string, dots? : number, duration : string,keys:[string]});
             getPlayNote() : any;
             setPlayNote(note : any) : Note;
             isRest() : boolean;
